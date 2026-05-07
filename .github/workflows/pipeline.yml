@@ -35,7 +35,7 @@ jobs:
       - name: Run pytest
         run: |
           export MPLBACKEND=Agg
-          python -m pytest tests/ -v
+          PYTHONPATH=. python -m pytest tests/ -v
 
 # ══════════════════════════════════════════════════════════════════════════════
 # JOB 2 : BUILD
